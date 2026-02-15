@@ -2,7 +2,7 @@
 <gupdate xmlns="http://www.google.com/update2/response" protocol="2.0">
   <app appid="obbajgngbkdemplciiglpdnfjgjgkeib">
     <updatecheck 
-      codebase="https://github.com/plugnplay099-afk/ahara-auto-extension/releases/download/v3.0/ahara-auto.zip" 
+      codebase="https://github.com/plugnplay099-afk/ahara-auto-extension/releases/download/v3.0/AharaMotherExtension.crx" 
       version="3.0" />
   </app>
 </gupdate>
