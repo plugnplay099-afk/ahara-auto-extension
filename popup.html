@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Ahara Mother Control</title>
+
+
+
+  <style>
+#deviceStatus {
+  text-align: center;
+  font-weight: bold;
+  font-size: 14px;
+  margin: 6px 0 10px;
+}
+
+    body {
+      font-family: Arial;
+      width: 280px;
+      padding: 10px;
+      background: #f7f7f7;
+    }
+
+    h4 {
+      margin: 10px 0 5px;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 4px;
+    }
+
+    select, input, button {
+      width: 100%;
+      margin-bottom: 8px;
+      padding: 6px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    button {
+      cursor: pointer;
+      border: none;
+      color: white;
+      font-weight: bold;
+    }
+
+    .green { background: #4CAF50; }
+    .red { background: #f44336; }
+    .blue { background: #2196F3; }
+
+    #status {
+      font-size: 12px;
+      padding: 8px;
+      background: #eee;
+      border-radius: 5px;
+      margin-top: 5px;
+    }
+
+    .small {
+      font-size: 11px;
+      color: #555;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- LOGIN SECTION -->
+  <h4>👤 Login Profiles</h4>
+
+  <select id="profileSelect"></select>
+
+  <input id="mobile" type="text" placeholder="Mobile number" maxlength="10" />
+
+  <input id="shortcut" type="text" placeholder="Shortcut key (A-Z)" maxlength="1" />
+  <div class="small">Use ALT + key</div>
+
+  <select id="userType">
+  <option value="O">Shop Owner</option>
+  <option value="A">Shop Assistant</option>
+</select>
+
+<input id="rcNo" type="text" placeholder="Default RC No (e.g. 350100)" maxlength="6" />
+
+  <button id="save" class="blue">💾 Save Profile</button>
+
+  <!-- BOT CONTROL -->
+  <h4>⚙️ Automation</h4>
+
+<h4>Ahara Auto</h4>
+
+<h4>Device Status</h4>
+<div id="deviceStatus">Checking...</div>
+
+
+
+
+  <button id="startBtn" class="green">▶ START BOT</button>
+  <button id="resetBtn" class="red">🔄 RESET BOT</button>
+
+  <div id="status">Status: Ready</div>
+
+  <!-- FAST MODE -->
+  <h4>⚡ Speed Mode</h4>
+
+  <button id="fast" class="green">⚡ FAST MODE</button>
+
+</body>
+
+<script src="popup.js"></script>
+</html>
