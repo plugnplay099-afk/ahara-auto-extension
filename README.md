@@ -1,0 +1,1 @@
+# ahara-auto-extension
